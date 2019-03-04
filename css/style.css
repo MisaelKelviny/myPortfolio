@@ -1,0 +1,40 @@
+body {
+    border: 0;
+}
+
+.menu-top {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.lista {
+    font-size: 25px;
+    color: #ccc;
+}
+
+.lista>a {
+    text-decoration: none;
+    text-emphasis: none;
+    margin: 10px;
+}
+
+.conteudo {
+    width: 100%;
+    height: 600px;
+    background-color: aquamarine;
+}
+
+.image-border {
+    height: 400px;
+    width: 400px;
+    border: 20px solid rgba(0, 0, 0, 0.07);
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.carde {
+    box-shadow: 0px 10px 20px 4px #00000015;
+    padding: 20px;
+}
