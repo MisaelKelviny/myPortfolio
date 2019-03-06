@@ -11,7 +11,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/circle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
+
 
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color:white;font-size:25px;box-shadow: 0px 2px 7px #ccc">
@@ -20,65 +26,78 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="navbar10">
-                <ul class="navbar-nav mr-auto ml-auto nav-fill">
+                <ul class="navbar-nav mr-auto ml-auto nav-fill ">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link text-info" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="//codeply.com">Sobre</a>
+                        <a class="nav-link text-info" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Habilidades</a>
+                        <a class="nav-link text-info" href="#">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experiência</a>
+                        <a class="nav-link text-info" href="#">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfólio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link text-info" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div style="overflow: hidden;width: 100%;position: relative;background-color: black;z-index: -1">
+        <div class="parallax"></div>
+    </div>
 
-    <div class="container d-flex h-100" style="margin-top:15%;">
-        <div class="conteudo">
-            <div class="row align-items-center h-100">
-                <div class="col-sm-6 mx-auto">
-                    <h2>Misael Kelviny</h2>
-                    <h4>Dreamer, Coder, Fullstack Developer</h4>
-                    <ul class="jumbotrom" style="list-style: none;">
-                        <li><i style="margin-right:10px;" class="fas fa-user-tie"></i>22 Years Old</li>
-                        <li><i style="margin-right:10px;" class="fas fa-map-marker-alt"></i>Pouso Alegre, Minas Gerais - Brazil</li>
-                        <li><i style="margin-right:10px;" class="fas fa-phone-square"></i>+55 (35) 99209-6898</li>
-                        <li><i style="margin-right:10px;" class="fas fa-at"></i>misaelkelviny32@gmail.com</li>
-                    </ul>
-                    <a href="#"><span style="margin-right:10px;font-size: 35px;"><i class="fab fa-facebook"></i></span></a>
-                    <a href="#"><span style="margin-right:10px;font-size: 35px;"><i class="fab fa-whatsapp-square"></i></span></a>
-                    <a href="#"><span style="margin-right:10px;font-size: 35px;"><i class="fab fa-github"></i></i></span></a>
-                    <a href="#"><span style="margin-right:10px;font-size: 35px;"><i class="fab fa-instagram"></i></span></a>
-                </div>
-                <div class="col-sm-6 text-center">
-                    <div class="image-border" style="box-shadow: -10px 10px 5px #ccc">
-                        <img class="img-fluid rounded img-thumbnail" src="img/1.jpg">
+    <div class="container d-flex h-100 py-5" style="margin-top:-25%;">
+        <div>
+            <div class="container py-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8 px-3 py-5 mt-5">
+                        <div class="card-block px-3 bg-white">
+                            <h1 class="card-title text-secondary" style="font-size:70px;">Misael Kelviny</h1>
+                            <h5 class="card-subtitle mb-2 text-muted">Dreamer, Coder, Fullstack Developer</h5>
+                            <p class="card-text">
+                                <ul style="list-style: none;margin-left: -40px;">
+                                    <li><i style="margin-right:10px;" class="text-info fas fa-user-tie"></i>22 Years Old</li>
+                                    <li><i style="margin-right:10px;" class="text-info fas fa-map-marker-alt"></i>Pouso Alegre, Minas Gerais - Brazil</li>
+                                    <li><i style="margin-right:10px;" class="text-info fas fa-phone-square"></i>+55 (35) 99209-6898</li>
+                                    <li><i style="margin-right:10px;" class="text-info fas fa-at"></i>misaelkelviny32@gmail.com</li>
+                                </ul>
+                            </p>
+                            <a class="text-info" href="#"><span style="margin-right:10px;font-size: 35px;"><i class="fab fa-facebook"></i></span></a>
+                            <a class="text-info" href="#"><span style="margin-right:10px;font-size: 35px;"><i class="fab fa-whatsapp-square"></i></span></a>
+                            <a class="text-info" href="#"><span style="margin-right:10px;font-size: 35px;"><i class="fab fa-github"></i></i></span></a>
+                            <a class="text-info" href="#"><span style="margin-right:10px;font-size: 35px;"><i class="fab fa-instagram"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-4">
+                        <div class="img-border2">
+                            <div class="img-border">
+                                <img src="img/1.jpg" class="rounded-circle img-fluid" style="width:100%;height:100%;background-size: cover;">
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container d-flex h-100" style="margin-top:15%;">
-        <div class="conteudo">
+    <div class="container d-flex h-100 py-5 my-5">
+        <div>
             <div class="row align-items-center h-100">
                 <div class="col-sm-12 col-md-6 mx-auto">
-                    <img class="img-fluid mx-auto" src="img/ab-img.png">
+                    <img data-aos="fade-right" data-aos-duration="2000" class="img-fluid mx-auto" src="img/ab-img.png">
                 </div>
-                <div class="col-sm-12 col-md-6 text-center">
+                <div class="col-sm-12 col-md-6 text-center" data-aos="fade-left" data-aos-duration="3000">
                     <h2>About Me!</h2>
-                    <p>Hello, I’m a Misael, web-developer based on Brazil. I have rich experience in web site design & building and customization. Also I am good at</p>
+                    <p>
+
+                        hello, my name is Misael and I am an information systems student. Working hard with ionic application development, CSS, HTML and JavaScript web development. Mastering Front End and Backend in applications, some knowledge in API rest and servers in PHP.
+                        Needing to gain experience in several areas. Knowledge is always welcome in my life.
+                    </p>
                     <div class="row text-center justify-content">
                         <div class="col-2">
                             <img width="50px" height="50px" class="img-thumbnail" src="img/css3.png">
@@ -99,35 +118,49 @@
                             <img width="50px" height="50px" class="img-thumbnail" src="img/java.png">
                         </div>
                     </div>
-                    <div class="row text-center justify-content w-100" style="margin-top:40px;">
-                        <h4>Download my CV and see more about me, :)</h4>
-                        <button style="margin-top:40px;position: relative" class="btn btn-primary">Download CV <i class="fa fa-download"></i></button>
+                    <div class="row mx-auto" style="margin-top:40px;">
+                        <div class="col-sm-12 mx-auto">
+                            <h4>Download my CV and see more about me, :)</h4>
+                            <button style="margin-top:40px;position: relative" class="btn btn-primary bg-info">Download CV <i class="fa fa-download"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container" style="margin-top:15%;margin-left:auto;margin-right:auto;">
+    <div class="container py-5" style="margin-top:10%">
         <div class="conteudo ">
             <div class="row">
-                <div class="col-sm-12 text-center">
+                <div class="col-sm-12 text-center" data-aos="zoom-in">
                     <h2>What I do</h2>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="card border-light mb-3" style="max-width: 18rem;margin: 10px;">
-                    <div class="card-header"><i class="fa fa-bullseye purple-color"></i></div>
+            <div class="row justify-content-center py-5">
+
+                <div class="card border-light mb-3" style="max-width: 18rem;margin: 10px;" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card-header text-danger"><i class="fa fa-object-ungroup sky-color"></i></div>
                     <div class="card-body">
-                        <h3>UI Design</h3>
+
+                        <h3>Hibridy App development</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                         </p>
                     </div>
                 </div>
 
-                <div class="card border-light mb-3" style="max-width: 18rem;margin: 10px;">
-                    <div class="card-header"><i class="fa fa-code iron-color"></i></div>
+                <div class="card border-light mb-3" style="max-width: 18rem;margin: 10px;" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card-header text-primary"><i class="fa fa-bullseye purple-color"></i></div>
+                    <div class="card-body">
+                        <h3>Rest API</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card border-light mb-3" style="max-width: 18rem;margin: 10px;" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card-header text-warning"><i class="fa fa-code iron-color"></i></div>
                     <div class="card-body">
                         <h3>Web Development</h3>
                         <p>
@@ -135,12 +168,28 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="card border-light mb-3" style="max-width: 18rem;margin: 10px;">
-                    <div class="card-header"><i class="fa fa-object-ungroup sky-color"></i></div>
+                <div class="card border-light mb-3" style="max-width: 18rem;margin: 10px;" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card-header text-warning"><i style="color:royalblue;" class="fab fa-php"></i></div>
                     <div class="card-body">
-
-                        <h3>App Development</h3>
+                        <h3>PHP server</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                    </div>
+                </div>
+                <div class="card border-light mb-3" style="max-width: 18rem;margin: 10px;" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card-header text-warning"><i style="color:black;" class="fa fa-database"></i></div>
+                    <div class="card-body">
+                        <h3>Database</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                    </div>
+                </div>
+                <div class="card border-light mb-3" style="max-width: 18rem;margin: 10px;" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card-header text-warning"><i style="color:turquoise;" class="fa fa-project-diagram"></i></div>
+                    <div class="card-body">
+                        <h3>Project Management</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                         </p>
@@ -150,9 +199,289 @@
         </div>
     </div>
 
+    <div class="container" style="margin-top:10%">
+        <div>
+            <div>
+                <div class="container py-3">
+                    <div class="row py-2">
+                        <div class="col-sm-12 col-md-6" data-aos="fade-up" data-aos-duration="2000">
+                            <div>
+                                <h2>Education</h2>
+                                <div style="box-shadow: 0px 5px 15px #ccc;padding: 20px;margin:5px;margin-top:20px;">
+                                    <!-- Education Institutes-->
+                                    <div class="dark-bg">
+                                        <h4>Information System<a class="ml-2" href="">Univas</a></h4>
+                                        <div>2005-2008</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. </p>
+                                    </div>
+                                    <!-- Education Institutes-->
+                                    <div class="dark-bg">
+                                        <h4>App development<a class="ml-2" href="">App School</a></h4>
+                                        <div>2005-2008</div>
+                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                    <!-- Education Institutes-->
+                                    <div class="dark-bg">
+                                        <h4>UI/UX design School<a class="ml-2" href="">Oxford University</a></h4>
+                                        <div>2005-2008</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6" data-aos="fade-up" data-aos-duration="2000">
+                            <div>
+                                <h2>Experience</h2>
+                                <div style="box-shadow: 0px 5px 15px #ccc;padding: 20px;margin:5px;margin-top:20px;">
+                                    <!-- Education Institutes-->
+                                    <div class="dark-bg">
+                                        <h4>Track7 - Telemetria<a class="ml-2" href="">Track7</a></h4>
+                                        <div>2005-2008</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. </p>
+                                    </div>
+                                    <!-- Education Institutes-->
+                                    <div class="dark-bg">
+                                        <h4>Biomedicine - BioBase<a class="ml-2" href="">Biobase</a></h4>
+                                        <div>2005-2008</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. </p>
+                                    </div>
+                                    <!-- Education Institutes-->
+                                    <div class="dark-bg">
+                                        <h4>Software House Institute<a class="ml-2" href="">Software</a></h4>
+                                        <div>2005-2008</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 my-5">
+        <div>
+            <div class="row">
+                <div class="col-sm-12 text-center py-5" data-aos="zoom-in">
+                    <h2>Projects</h2>
+                </div>
+            </div>
+            <div class="container py-5 border-bottom border-info" data-aos="fade-left" data-aos-duration="2000">
+                <div class="row">
+                    <div class="col-md-4 py-3">
+                        <img src="img/site2.jpg" class="rounded-circle img-fluid" style="width:100%;height:100%;background-size: cover">
+                    </div>
+                    <div class="col-md-8 px-4 py-5 my-2">
+                        <div class="card-block px-3">
+                            <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                            <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container py-5 border-bottom border-info" data-aos="fade-right" data-aos-duration="2000">
+                <div class="row">
+                    <div class="col-md-8 px-4 py-5 my-2">
+                        <div class="card-block px-3">
+                            <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                            <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3">
+                        <img src="img/site3.jpg" class="rounded-circle img-fluid" style="width:100%;height:100%;background-size: cover">
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5 border-bottom border-info" data-aos="fade-left" data-aos-duration="2000">
+                <div class="row">
+                    <div class="col-md-4 py-3">
+                        <img src="img/site4.jpg" class="rounded-circle img-fluid" style="width:100%;height:100%;background-size: cover">
+                    </div>
+                    <div class="col-md-8 px-4 py-5 my-2">
+                        <div class="card-block px-3">
+                            <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                            <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container mb-5 pb-5">
+        <div>
+            <div class="row">
+                <div class="col-sm-12 text-center" data-aos="zoom-in">
+                    <h2>Skills and hability's</h2>
+                </div>
+            </div>
+            <div class="row" style="margin-top:50px;">
+                <div class="col-sm-6 text-secondary" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-sm-12" style="margin-top:20px;">
+                            <h4>Technical Skill's</h4>
+                            <div class="progress bg-dark">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12" style="margin-top:20px;">
+                            <h4>Professional Skill's</h4>
+                            <div class="progress bg-dark">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 86%;" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">86%</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12" style="margin-top:20px;">
+                            <h4>Communication</h4>
+                            <div class="progress bg-dark">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 76%;" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">76%</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12" style="margin-top:20px;">
+                            <h4>Team Work</h4>
+                            <div class="progress bg-dark">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 91%;" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100">91%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 text-secondary" style="margin-top:50px;" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-sm-4 mx-auto">
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <div style="margin-left: 38px">HTML</div>
+                                    <div class="c100 p85 bg-dark center">
+                                        <span>85%</span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <div style="margin-left: 42px">CSS</div>
+                                    <div class="c100 p95 bg-dark">
+                                        <span>95%</span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <div style="margin-left: 30px">javaScript</div>
+                                    <div class="c100 p70 bg-dark">
+                                        <span>70%</span>
+                                        <div class="slice">
+                                            <div class="bar"></div>
+                                            <div class="fill"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <footer>
-
+    <div class="container pt-5 mt-5">
+        <div class="row">
+            <div class="col-sm-12 text-center" data-aos="zoom-in">
+                <h2>Contact Me</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-5">
+            <div class="pt-4" style="max-width: 18rem;margin: 10px;box-shadow: 0px 10px 20px 4px #00000015;" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card-title text-center bg-white">
+                    <i class="text-info fa fa-5x fa-location-arrow purple-color"></i>
+                </div>
+                <div class="card-body bg-white">
+                    <h3 class="text-center">Address</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white mb-3 pt-4" style="max-width: 18rem;margin: 10px;box-shadow: 0px 10px 20px 4px #00000015;" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card-title text-center bg-white ">
+                    <i class=" text-info fa fa-5x fa-phone purple-color"></i>
+                </div>
+                <div class="card-body bg-white">
+                    <h3 class="text-center">Phone</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+            </div>
+            <div class="mb-3 pt-4" style="max-width: 18rem;margin: 10px;box-shadow: 0px 10px 20px 4px #00000015;" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card-title text-center bg-white">
+                    <i class="text-info fa fa-5x fa-envelope purple-color"></i>
+                </div>
+                <div class="card-body bg-white">
+                    <h3 class="text-center">E-mail</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center py-5 mt-5" data-aos="zoom-in">
+            <div class="col-sm-12 col-md-6">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" class="form-control" placeholder="Your E-mail">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Message</label>
+                        <textarea class="form-control" style="resize: none;" rows="3"></textarea>
+                    </div>
+                    <button style="border-radius: 30px;" type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="col-sm-12 text-center">
+                <a class="text-info" href="#"><span style="margin-right:10px;font-size: 35px;"><i class="fab fa-facebook"></i></span></a>
+                <a class="text-info" href="#"><span style="margin-right:10px;font-size: 35px;"><i class="fab fa-whatsapp-square"></i></span></a>
+                <a class="text-info" href="#"><span style="margin-right:10px;font-size: 35px;"><i class="fab fa-github"></i></i></span></a>
+                <a class="text-info" href="#"><span style="margin-right:10px;font-size: 35px;"><i class="fab fa-instagram"></i></span></a>
+            </div>
+        </div>
+    </div>
 </footer>
+<script>
+    AOS.init();
+</script>
 
 </html>
