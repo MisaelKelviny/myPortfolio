@@ -87,6 +87,7 @@ a img:hover {
     right: 0;
     bottom: 0;
     color: #fff;
+    text-shadow: 0px 2px 3px black
 }
 
 .galeria-box div.legenda:hover{
