@@ -228,6 +228,10 @@ a:hover {
 .bgSubDark{
   background-color: #353535;
 }
+
+.greenColor{
+  color: #42eb07;
+}
 .masthead {
   height: 100vh;
   min-height: 500px;
@@ -290,6 +294,12 @@ a:hover {
   font-size: 40px;
 }
 
+.projectTitle{
+  color: #42eb07;
+  font-family: Major;
+  font-size: 40px;
+}
+
 .profilePhotoAboutMe {
   padding: 5px;
   width: 80%;
@@ -298,8 +308,6 @@ a:hover {
   z-index: 999;
   position: relative;
   filter: grayscale(1);
-  -webkit-transform: translateY(-10px) translateZ(-60px);
-  transform: translateY(-10px) translateZ(-60px);
 }
 
 .squarePhoto{
