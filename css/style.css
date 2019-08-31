@@ -1,233 +1,227 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Light.ttf');
+  font-family: "Roboto";
+  src: url("../font/Roboto-Light.ttf");
 }
 
 @font-face {
-    font-family: 'Sand';
-    src: url('../font/Quicksand-Light.ttf');
+  font-family: "Sand";
+  src: url("../font/Quicksand-Light.ttf");
 }
 
-html, body {
-    overflow-x: hidden;
-    border: 0;
-    width: 100%;
-    padding: 0;
-    scroll-behavior: smooth;
-    font-family: 'Sand';
+html,
+body {
+  overflow-x: hidden;
+  border: 0;
+  width: 100%;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Sand";
+  background-color: #202020;
 }
 
 .light-blue {
-    color: #448aff;
+  color: #448aff;
 }
 
-.light-green{
-    color: #4add6a;
+.light-green {
+  color: #4add6a;
 }
 
 .border-light-blue {
-    background-color: #448aff;
+  background-color: #448aff;
 }
 
 .light-red {
-    color: #ff5252
+  color: #ff5252;
 }
 
 .border-light-red {
-    border: 1px solid #ff5252
+  border: 1px solid #ff5252;
 }
 
 .sidenav {
-    height: 100%;
-    width: 30%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 a img {
-    max-width: 100%;
-    transition: all 0.3s;
+  max-width: 100%;
+  transition: all 0.3s;
 }
 
 a img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .galeria-box {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .galeria-box {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .galeria-box img {
-    max-width: 100%;
-    transition: all 0.5s;
+  max-width: 100%;
+  transition: all 0.5s;
 }
 
 .galeria-box:hover img {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .legenda {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: #fff;
-    text-shadow: 0px 2px 3px black
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  text-shadow: 0px 2px 3px black;
 }
 
-.galeria-box div.legenda:hover{
-    background-color: #4489ff6c;
+.galeria-box div.legenda:hover {
+  background-color: #4489ff6c;
 }
 
-.texto-legenda{
-    visibility: hidden;
-    position: absolute;
-    top:70%;
-    width: 100%
+.texto-legenda {
+  visibility: hidden;
+  position: absolute;
+  top: 70%;
+  width: 100%;
 }
-
 
 .galeria-box div.legenda:hover p.texto-legenda {
-    visibility: visible;
+  visibility: visible;
 }
 
 .legenda span {
-    position: absolute;
-    width:100%;
-    top: 40%;
+  position: absolute;
+  width: 100%;
+  top: 40%;
 }
 
 .main {
-    margin-left: 30%;
-    font-size: 28px;
-    padding: 0px 10px;
+  margin-left: 30%;
+  font-size: 28px;
+  padding: 0px 10px;
 }
 
-.skill-box{
-    width: 100%;
+.skill-box {
+  width: 100%;
 }
 
 .skill-box img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 20px;
 }
 
 @media (max-width: 575.98px) {
-    .sidenav {
-        width: 100%;
-        position: relative;
-    }
-    .main {
-        margin-left: 0;
-    }
+  .sidenav {
+    width: 100%;
+    position: relative;
+  }
+  .main {
+    margin-left: 0;
+  }
 
-    .skill-box{
-        width: 50%;
-    }
+  .skill-box {
+    width: 50%;
+  }
 }
 
-@media (min-width: 576px){
-.modal-dialog {
+@media (min-width: 576px) {
+  .modal-dialog {
     max-width: 1700px !important;
     margin: 1.75rem auto;
-    }
+  }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {}
-
-@media (min-width: 768px) and (max-width: 991.98px) {}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {}
-
-@media (min-width: 1200px) {}
-
-
-
-input[type="text"], input[type="email"], input[type="phone"], textarea{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #cccccc;
-    border-radius: 0 !important;
-    width: 100%;
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #cccccc;
+  border-radius: 0 !important;
+  width: 100%;
 }
 
-label, textarea{
-    font-size: 15px ;
+label,
+textarea {
+  font-size: 15px;
 }
-.form-control:focus{
-    border-color: #cccccc;
-    outline: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    
-}
-
-textarea{
-    resize: none;
-    border-color: #cccccc;
-    outline: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+.form-control:focus {
+  border-color: #cccccc;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
-form{
-    font-family: 'Roboto';
-
+textarea {
+  resize: none;
+  border-color: #cccccc;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
-.btn-portfolio{
-    background-color: #448aff;
-    color:white;
-    width: 200px;
-    height: 40px;
-    box-shadow: -3px 3px 5px #cccccc;
+form {
+  font-family: "Roboto";
+}
+
+.btn-portfolio {
+  background-color: #448aff;
+  color: white;
+  width: 200px;
+  height: 40px;
+  box-shadow: -3px 3px 5px #cccccc;
 }
 
 .modal-dialog {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    top: 0;
-    left: 0;
-    padding: 5px;
-  }
-  
-  .modal-content {
-    height: 100%;
-    border-radius: 0;
-    padding: 0;
-    margin: 0;
-  }
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  padding: 5px;
+}
 
-  .full-screen {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    top: 0;
-    left: 0;
+.modal-content {
+  height: 100%;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.full-screen {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
 }
 
 iframe {
-    height:calc(100vh - 4px);
-    width:calc(100vw - 4px);
-    box-sizing: border-box;
-  }
+  height: calc(100vh - 4px);
+  width: calc(100vw - 4px);
+  box-sizing: border-box;
+}
+

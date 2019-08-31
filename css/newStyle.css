@@ -1,0 +1,470 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../font/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Major;
+  src: url(../font/MajorMonoDisplay-Regular.ttf);
+}
+
+a {
+  color: #42eb07;
+}
+a:link { 
+  text-decoration: unset; 
+} 
+a:hover { 
+  text-decoration: none; 
+  color: #18ad18;
+}
+.main-nav,
+.main-nav * {
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav > ul > li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+}
+
+.main-nav a {
+  display: block;
+  position: relative;
+  color: #42eb07;
+  padding: 10px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-family: Poppins;
+  margin: 10px;
+}
+
+.main-nav .active > a:hover {
+  background-color: transparent;
+}
+
+.main-nav a:hover,
+.main-nav li:hover > a {
+  color: #098509;
+  text-decoration: none;
+}
+
+.main-nav .drop-down ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 30px);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: ease all 0.3s;
+}
+
+.main-nav .drop-down:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.main-nav .drop-down li {
+  min-width: 180px;
+  position: relative;
+}
+
+.main-nav .drop-down ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  color: #065e77;
+}
+
+.main-nav .drop-down ul a:hover,
+.main-nav .drop-down ul .active > a,
+.main-nav .drop-down ul li:hover > a {
+  color: #1bb1dc;
+}
+
+.main-nav .drop-down > a:after {
+  content: "\f107";
+  font-family: FontAwesome;
+  padding-left: 10px;
+}
+
+.main-nav .drop-down .drop-down ul {
+  top: 0;
+  left: calc(100% - 30px);
+}
+
+.main-nav .drop-down .drop-down:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+}
+
+.main-nav .drop-down .drop-down > a {
+  padding-right: 35px;
+}
+
+.main-nav .drop-down .drop-down > a:after {
+  content: "\f105";
+  position: absolute;
+  right: 15px;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  left: -260px;
+  width: 260px;
+  padding-top: 18px;
+  background: rgb(26, 134, 22);
+  transition: 0.4s;
+}
+
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav a {
+  display: block;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
+  color: #8dc2fa;
+  text-decoration: none;
+}
+
+.mobile-nav .drop-down > a:after {
+  content: "\f078";
+  font-family: FontAwesome;
+  padding-left: 10px;
+  position: absolute;
+  right: 15px;
+}
+
+.mobile-nav .active.drop-down > a:after {
+  content: "\f077";
+}
+
+.mobile-nav .drop-down > a {
+  padding-right: 35px;
+}
+
+.mobile-nav .drop-down ul {
+  display: none;
+  overflow: hidden;
+}
+
+.mobile-nav .drop-down li {
+  padding-left: 20px;
+}
+
+.mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  margin: 18px 18px 0 0;
+  color: #42eb07;
+}
+
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: transparent;
+  overflow: hidden;
+  display: none;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #fff;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-color: #202020;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mainName {
+  font-family: Major;
+  font-size: 4rem;
+  color: #42eb07;
+}
+
+.subtitlePortfolio {
+  font-family: Poppins;
+  font-size: 40px;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 10px;
+}
+
+.redesSociais {
+  font-size: 30px;
+  outline: none;
+  color: #42eb07;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 10px;
+}
+
+.introTexto {
+  width: 100%;
+  transform: translateY(30px);
+  transition: all 0.3s ease-in;
+}
+
+.sticky {
+  width: 20px;
+  height: 120%;
+  background-color: #42eb07;
+  position: absolute;
+  top: -150px;
+  transform: rotate(45deg);
+  left: 150px;
+  box-shadow: 40px 10px 30px black;
+}
+
+@media screen and (max-width: 970px) {
+  .sticky {
+    display: none;
+  }
+}
+
+.aboutMeTitle {
+  color: #42eb07;
+  font-family: Major;
+  font-size: 40px;
+}
+
+.profilePhotoAboutMe {
+  padding: 5px;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  z-index: 999;
+  position: relative;
+  filter: grayscale(1);
+  -webkit-transform: translateY(-10px) translateZ(-60px);
+  transform: translateY(-10px) translateZ(-60px);
+}
+
+.squarePhoto{
+  width: 80%;
+  border: 2px solid #42eb07;
+}
+
+@media only screen and (max-width: 767px) {
+  .vc_row {
+    flex-direction: column-reverse;
+  }
+}
+
+.dividerPortfolio {
+  width: 100px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #42eb07;
+}
+
+section {
+  background-color: #202020;
+}
+
+.section{
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  transform-style: inherit; 
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  perspective: 2px;
+  transform-style: preserve-3d;
+}
+
+.section::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; 
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: translateZ(-1px) scale(1.5);
+}
+
+.textParallax{
+  /* Essa classe, como dito antes, é só para o nosso conteúdo.
+  Sinta-se livre para criar o que quiser.
+  */
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255,0.5);
+
+  color: white;
+  text-shadow: 0 0 5px #000;
+  font-size: 20px;
+  text-align: center;
+}
+
+.bg1{
+  background-image: url(../img/2.jpg);
+}
+
+
+@media (min-width: 768px) {
+
+  /* show 3 items */
+  .carouselPrograms .carousel-inner .active,
+  .carouselPrograms .carousel-inner .active + .carousel-item,
+  .carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item {
+      display: block;
+  }
+
+  .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      transition: none;
+  }
+
+  .carouselPrograms .carousel-inner .carousel-item-next,
+  .carouselPrograms .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+  }
+
+  .carouselPrograms .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -33.333%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+
+  /* left or forward direction */
+  .carouselPrograms .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item,
+  .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+  }
+
+  /* farthest right hidden item must be abso position for animations */
+  .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+
+  /* right or prev direction */
+  .carouselPrograms .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+  }
+}
+
+
+.cardPortfolio{
+  height: 400px;
+  background-color: #353535;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.705);
+  text-align: center;
+}
+
+.cardPotfolioHeader{
+
+}
+
+.cardPortfolioContent{
+
+}
+
+.item{
+  margin-bottom: 10px;
+}
+
+.bg1{
+  background-image: url(../img/1.jpg);
+}
+.progress-bar{
+  background-color: #42eb07 !important;
+}
+
+.btnPortfolio{
+  padding: 20px 30px;
+  background-color: #202020;
+  border: 2px solid #42eb07;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
