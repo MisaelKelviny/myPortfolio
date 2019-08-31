@@ -27,10 +27,10 @@
 </head>
 
 <body class="bg-dark">
-    <header id="header">
-        <div class="container pr-5 mr-4">
-            <nav class="mt-3 main-nav float-right d-none d-lg-block">
-                <ul>
+    <nav class="navbar navbar-expand-lg bg-darkPortfolio main-nav d-none d-lg-block fixed-top" id="header">
+        <div class="container justify-content-flex-end">
+            <div>
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-3">
                         <a class="nav-link" href="#">Home
                             <span class="sr-only">(current)</span>
@@ -46,21 +46,20 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Full Page Image Header with Vertically Centered Content -->
-    <section class="masthead">
-        <div class="container-fluid h-100">
-            <div class="introTexto vc_row row h-100 d-flex align-items-center position-absolute">
-                <div class="col-lg-4 text-center mx-auto justify-content-center align-items-center">
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center vc_row d-flex justify-content-center">
+                <div class="col-lg-4 text-center">
                     <div>
                         <button class="btn btn-lg btn-success my-4 mx-2">Português</button>
                         <button class="btn btn-lg btn-success my-4 mx-2">English</button>
                     </div>
                 </div>
-                <div class="col-lg-8 mx-auto text-right">
+                <div class="col-lg-8 text-left">
                     <h2 class="text-white mainName text-right justify-content-end">Misael <span
                             class="mainName">K</span>elviny</h2>
                     <h4 class="subtitlePortfolio text-right justify-content-end">Front-end Developer</h4>
@@ -85,8 +84,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
+    </header>
 
     <!-- Page Content -->
     <section class="py-5" id="about">
@@ -96,7 +94,7 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-12">
-                            <h2 class="aboutMeTitle my-5">About Me</h2>
+                            <h2 class="aboutMeTitle my-3">About Me</h2>
                             <div>
                                 <p class="text-white text-justify">Hello, my name is Misael and I am undergraduate
                                     studant of
@@ -112,25 +110,28 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 text-left">
-                            <ul style="font-size:13px; list-style: none" class="text-white">
-                                <li>
-                                    <i
-                                        class="text-white my-1 px-2 py-2 border-light-blue rounded-circle mr-3 fa fa-user"></i>
-                                    22 Years Old</li>
-                                <li><i
-                                        class="text-white my-1 px-2 py-2 border-light-blue rounded-circle mr-3 fa fa-map-marker-alt"></i>Pouso
-                                    Alegre, Minas Gerais - Brazil</li>
-                                <li><i
-                                        class="text-white my-1 px-2 py-2 border-light-blue rounded-circle mr-3 fa fa-phone-square"></i>+55
-                                    (35) 99209-6898</li>
-                                <li><i
-                                        class="text-white my-1 px-2 py-2 border-light-blue rounded-circle mr-3 fa fa-at"></i>misaelkelviny@gmail.com
+                            <ul style="font-size:13px; list-style: none; padding: 0px" class="text-white">
+                                <li class="d-flex align-items-center text-center mx-2">
+                                    <i class="text-white my-1 px-3 py-2 fa fa-2x fa-user"></i>
+                                    22 Years Old
+                                </li>
+                                <li class="d-flex align-items-center text-center mx-2">
+                                    <i class="text-white my-1 px-3 py-2 fa fa-2x fa-map-marker"></i>
+                                    Pouso Alegre, Minas Gerais - Brazil
+                                </li>
+                                <li class="d-flex align-items-center text-center mx-2">
+                                    <i class="text-white my-1 px-3 py-2 fa fa-2x fa-phone-square"></i>
+                                    +55 (35) 99209-6898
+                                </li>
+                                <li class="d-flex align-items-center text-center mx-2">
+                                    <i class="text-white my-1 px-3 py-2 fa fa-2x fa-at"></i>
+                                    misaelkelviny@gmail.com
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="row mt-5">
-                        <div class="col-md-12 text-center mx-auto mt-4">
+                        <div class="col-md-12 text-center mx-auto">
                             <div>
                                 <button class="btnPortfolio" type="button">
                                     <i class="fa fa-download mx-2"></i>
@@ -140,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 pt-4 d-flex align-items-center justify-content-center">
+                <div class="col-md-6 pt-2 d-flex align-items-center justify-content-center">
                     <div class="squarePhoto">
                         <img class="img-fluid d-block mx-auto profilePhotoAboutMe" src="img/2.jpg">
                     </div>
@@ -198,6 +199,19 @@
                                     <div class="cardPortfolioContent">
                                         <p>Website criado para o escritório de contabilidade da cidade de Pouso Alegre -
                                             MG.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.cartorio24horas.com.br/" target="_blank">
+                                <div class="cardPortfolio">
+                                    <div class="cardPotfolioHeader">
+                                        <h5>Cartilha Enfermagem</h5>
+                                    </div>
+                                    <div class="cardPortfolioContent">
+                                        <p>Aplicativo de informações referente a sífilis congênita, projeto criado junto
+                                            ao curso de enfermagem.</p>
                                     </div>
                                 </div>
                             </a>
@@ -372,6 +386,44 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <h2 class="my-5 text-center text-uppercase text-white font-weight-bold">Formation</h2>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <div class="border border-success px-3">
+                        <div class="shadow bgSubDark my-3 py-3 px-3 text-white">
+                            <h6 class="font-weight-bold">UNIVAS - Universidade do Vale do Sapucaí</h6>
+                            <p>Bacharelado em Sistemas de Informação</p>
+                            <span class="font-italic">2017 - 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-8 offset-md-3">
+                    <div class="border border-success px-3">
+                        <div class="shadow bgSubDark my-3 py-3 px-3 text-white">
+                            <h6 class="font-weight-bold">Origamid</h6>
+                            <p>Webdesigner Básico</p>
+                            <span class="font-italic">2015 - 2015</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <div class="border border-success px-3">
+                        <div class="shadow bgSubDark my-3 py-3 px-3 text-white">
+                            <h6 class="font-weight-bold">Udemy</h6>
+                            <p>UI Concepts and Fundamentals</p>
+                            <span class="font-italic">2019 - 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -413,8 +465,8 @@
             loop: true,
             margin: 20,
             nav: true,
-            dots: false,
-            autoplay: false,
+            dots: true,
+            autoplay: true,
             responsive: {
                 0: {
                     items: 1

@@ -221,6 +221,13 @@ a:hover {
   color: #fff;
 }
 
+.justify-content-flex-end{
+  justify-content: flex-end !important;
+}
+
+.bgSubDark{
+  background-color: #353535;
+}
 .masthead {
   height: 100vh;
   min-height: 500px;
