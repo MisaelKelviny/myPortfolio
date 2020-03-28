@@ -11,11 +11,11 @@
 a {
   color: #42eb07;
 }
-a:link { 
-  text-decoration: unset; 
-} 
-a:hover { 
-  text-decoration: none; 
+a:link {
+  text-decoration: unset;
+}
+a:hover {
+  text-decoration: none;
   color: #18ad18;
 }
 .main-nav,
@@ -221,15 +221,15 @@ a:hover {
   color: #fff;
 }
 
-.justify-content-flex-end{
+.justify-content-flex-end {
   justify-content: flex-end !important;
 }
 
-.bgSubDark{
+.bgSubDark {
   background-color: #353535;
 }
 
-.greenColor{
+.greenColor {
   color: #42eb07;
 }
 .masthead {
@@ -249,10 +249,24 @@ a:hover {
 
 .subtitlePortfolio {
   font-family: Poppins;
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   font-weight: 800;
   letter-spacing: 10px;
+}
+
+.podcastProjectSubTitle {
+  font-family: Poppins;
+  font-size: 30px;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 10px;
+}
+
+.myPodcastTitle {
+  color: #42eb07;
+  font-family: Major;
+  font-size: 40px;
 }
 
 .redesSociais {
@@ -286,6 +300,13 @@ a:hover {
   .sticky {
     display: none;
   }
+  .subtitlePortfolio {
+    font-size: 25px;
+    text-align: center !important;
+  }
+  .mainName {
+    text-align: center !important;
+  }
 }
 
 .aboutMeTitle {
@@ -294,7 +315,19 @@ a:hover {
   font-size: 40px;
 }
 
-.projectTitle{
+.abilities {
+  color: #42eb07;
+  font-family: Major;
+  font-size: 40px;
+}
+
+.myContact {
+  color: #42eb07;
+  font-family: Major;
+  font-size: 40px;
+}
+
+.projectTitle {
   color: #42eb07;
   font-family: Major;
   font-size: 40px;
@@ -310,7 +343,7 @@ a:hover {
   filter: grayscale(1);
 }
 
-.squarePhoto{
+.squarePhoto {
   width: 80%;
   border: 2px solid #42eb07;
 }
@@ -332,11 +365,11 @@ section {
   background-color: #202020;
 }
 
-.section{
+.section {
   height: 100vh;
   min-height: 700px;
   position: relative;
-  transform-style: inherit; 
+  transform-style: inherit;
 }
 
 .wrapper {
@@ -352,7 +385,7 @@ section {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0; 
+  left: 0;
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -360,7 +393,7 @@ section {
   transform: translateZ(-1px) scale(1.5);
 }
 
-.textParallax{
+.textParallax {
   /* Essa classe, como dito antes, é só para o nosso conteúdo.
   Sinta-se livre para criar o que quiser.
   */
@@ -368,7 +401,7 @@ section {
   top: 25%;
   width: 100%;
   padding: 20px 0;
-  background-color: rgba(255, 255, 255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 
   color: white;
   text-shadow: 0 0 5px #000;
@@ -376,39 +409,44 @@ section {
   text-align: center;
 }
 
-.bg1{
+.bg1 {
   background-image: url(../img/2.jpg);
 }
 
-
 @media (min-width: 768px) {
-
   /* show 3 items */
   .carouselPrograms .carousel-inner .active,
   .carouselPrograms .carousel-inner .active + .carousel-item,
   .carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item {
-      display: block;
+    display: block;
   }
 
   .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-  .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-  .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-      transition: none;
+  .carouselPrograms
+    .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item,
+  .carouselPrograms
+    .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item
+    + .carousel-item {
+    transition: none;
   }
 
   .carouselPrograms .carousel-inner .carousel-item-next,
   .carouselPrograms .carousel-inner .carousel-item-prev {
-      position: relative;
-      transform: translate3d(0, 0, 0);
+    position: relative;
+    transform: translate3d(0, 0, 0);
   }
 
   .carouselPrograms .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      position: absolute;
-      top: 0;
-      right: -33.333%;
-      z-index: -1;
-      display: block;
-      visibility: visible;
+    position: absolute;
+    top: 0;
+    right: -33.333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
   }
 
   /* left or forward direction */
@@ -416,36 +454,40 @@ section {
   .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item,
   .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
   .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(-100%, 0, 0);
-      visibility: visible;
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
   }
 
   /* farthest right hidden item must be abso position for animations */
   .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
-      position: absolute;
-      top: 0;
-      left: 0%;
-      z-index: -1;
-      display: block;
-      visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
   }
 
+  .owl-carousel .owl-item img{
+    display: block !important;
+    width: 50% !important;
+    margin: 0 auto !important;
+  }
   /* right or prev direction */
   .carouselPrograms .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
   .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item,
   .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
   .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-      display: block;
-      visibility: visible;
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
   }
 }
 
-
-.cardPortfolio{
+.cardPortfolio {
   height: 400px;
   background-color: #353535;
   padding: 10px;
@@ -456,30 +498,94 @@ section {
   text-align: center;
 }
 
-.cardPotfolioHeader{
-
+.cardPortfolioPodcast {
+  height: 250px;
+  background-color: rgb(53, 53, 53);
+  padding: 10px;
+  display: grid;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.705);
 }
 
 .cardPortfolioContent{
-
+  font-size: 13px;
 }
 
-.item{
+.cardPortfolioPodcastImage{
+  height: 200px;
+  background-color: #353535;
+  background: url(/img/podmix.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.item {
   margin-bottom: 10px;
 }
 
-.bg1{
+.bg1 {
   background-image: url(../img/1.jpg);
 }
-.progress-bar{
+.progress-bar {
   background-color: #42eb07 !important;
 }
 
-.btnPortfolio{
+.btnPortfolio {
   padding: 20px 30px;
-  background-color: #202020;
+  background-color: rgb(32, 32, 32);
   border: 2px solid #42eb07;
   font-size: 12px;
   font-weight: 600;
   color: #fff;
+}
+
+.rssFeedContainer {
+}
+
+.rssTitle {
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+
+.rssTitle > a {
+  color: yellow;
+}
+
+.rssDescription {
+  color: #42eb07;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.rssDescription:after {
+  position: absolute;
+  bottom: -10px;  
+  height: 100%;
+  width: 100%;
+  content: "";
+  padding: -10px;
+  background: linear-gradient(to top,
+     rgb(53, 53, 53) 20%, 
+     rgba(53, 53, 53, 0) 80%
+  );
+  pointer-events: none; /* so the text is still selectable */
+}
+
+
+.thumb {
+  width: 80px;
+  height: 80px;
+  background-color: #1bb1dc;
+  border-radius: 100%;
+}
+
+.feed-title-image-thumb {
+  padding: 0px;
+  width: 60%;
+  margin: 0 auto;
+  align-items: center;
+  z-index: 999;
+  position: relative;
+  border: 2px solid #42eb07;
 }

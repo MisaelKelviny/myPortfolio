@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
@@ -21,311 +21,587 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/newStyle.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script
+        src="//rss.bloople.net/?url=https%3A%2F%2Fanchor.fm%2Fs%2F13f7b800%2Fpodcast%2Frss&showicon=true&showempty=true&striphtml=true&forceutf8=true&fixbugs=true&type=js"></script>
 </head>
 
-
-
-<body>
-    <div class="sidenav mb-5">
-        <div class="row pt-4">
-            <div class="col-sm-12">
-                <div class="col-6 justify-content-center mx-auto">
-                    <div class="border-top border-left " style="top:0;left:0;width: 40px;height:40px;position:absolute">
-                    </div>
-                    <div class="border-bottom border-right "
-                        style="bottom:0;right:0;width: 40px;height:40px;position:absolute"></div>
-                    <img class="rounded-circle img-fluid" src="img/2.jpg">
-
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 text-center py-2 my-2">
-                <h3 class="light-blue">Misael Kelviny</h3>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 text-center px-5">
-                <p style="font-size: 13px" class="text-justify">Hello, my name is Misael and I am an
-                    information systems student. Working hard with ionic application development, CSS, HTML and
-                    JavaScript web development. Mastering Front End and Backend in applications, some knowledge in
-                    API
-                    rest and servers in PHP.
-                    Needing to gain experience in several areas. Knowledge is always welcome in my life.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 text-left">
-                <ul style="font-size:13px; list-style: none" class="text-muted">
-                    <li><i class="text-white my-1 px-2 py-2 border-light-blue rounded-circle mr-3 fa fa-user"></i>22
-                        Years Old</li>
-                    <li><i
-                            class="text-white my-1 px-2 py-2 border-light-blue rounded-circle mr-3 fa fa-map-marker-alt"></i>Pouso
-                        Alegre, Minas Gerais - Brazil</li>
-                    <li><i
-                            class="text-white my-1 px-2 py-2 border-light-blue rounded-circle mr-3 fa fa-phone-square"></i>+55
-                        (35) 99209-6898</li>
-                    <li><i
-                            class="text-white my-1 px-2 py-2 border-light-blue rounded-circle mr-3 fa fa-at"></i>misaelkelviny@gmail.com
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-darkPortfolio main-nav d-none d-lg-block fixed-top" id="header">
+        <div class="container justify-content-flex-end">
+            <div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" id="home">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#about" id="about">Sobre</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#projects" id="project">Projetos</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#contact" id="contact">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="row text-center justify-content-center">
-            <div class="col-sm-12">
-                <a class="mx-2" target="_blank" href="#"><img height="30px" width="30px" class="img-fluid"
-                        src="img/linkedin.png"></a>
-                <a class="mx-2" target="_blank" href="https://github.com/MisaelKelviny"><img height="30px" width="30px"
-                        class="img-fluid" src="img/github.png"></a>
-                <a class="mx-2" target="_blank" href="https://www.instagram.com/kelvinymisael/"><img height="30px"
-                        width="30px" class="img-fluid" src="img/instagram.png"></a>
-                <a class="mx-2" target="_blank" href="https://www.facebook.com/misaelkelviny32"><img height="30px"
-                        width="30px" class="img-fluid" src="img/facebook.png"></a>
+    </nav>
+
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center vc_row d-flex justify-content-center">
+                <div class="col-lg-4 text-center d-flex justify-content-center">
+                    <div class="d-flex">
+                        <!-- <button class="btn btn-lg btn-success my-4 mx-2">Português</button>
+                        <button class="btn btn-lg btn-success my-4 mx-2">English</button> -->
+                        <div class="d-block mx-3">
+                            <button class="bg-transparent border border-0" id="pt" onclick="translatePt()">
+                                <img width="100" height="100" src="img/brazil.png" class="d-block mx-auto"
+                                    style="opacity: 0.7">
+                                <span class="text-white">Potuguês - BR</span>
+                            </button>
+                        </div>
+                        <div class="d-block mx-3">
+                            <button class="bg-transparent border border-0" id="en" onclick="translateEn()">
+                                <img width="100" height="100" src="img/united-states.png" class="d-block mx-auto"
+                                    style="opacity: 0.7">
+                                <span class="text-white">English</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 text-left">
+                    <h2 class="text-white mainName text-right justify-content-end">Misael <span
+                            class="mainName">K</span>elviny</h2>
+                    <h4 class="subtitlePortfolio text-right justify-content-end">Desenvolvedor Front-End</h4>
+                    <div class="d-flex justify-content-end">
+                        <div class="rounded-circle redesSociais d-flex justify-content-center align-items-center">
+                            <a href="https://www.facebook.com/misaelkelviny32" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="rounded-circle redesSociais d-flex justify-content-center align-items-center">
+                            <a href="https://www.behance.net/mastercode1" target="_blank"><i
+                                    class="fab fa-behance"></i></a>
+                        </div>
+                        <div class="rounded-circle redesSociais d-flex justify-content-center align-items-center">
+                            <a href="https://www.instagram.com/kelvinymisael/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="rounded-circle redesSociais d-flex justify-content-center align-items-center">
+                            <a href="https://www.linkedin.com/in/misael-kelviny/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="py-5" id="about">
+        <div class="dividerPortfolio mx-auto mb-5"></div>
+        <div class="container pb-5">
+            <div class="row vc_row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="aboutMeTitle my-3" id="aboutMe">Sobre mim</h2>
+                            <div>
+                                <p class="text-white text-justify" id="aboutMeText">
+                                    Olá, eu sou Misael Kelviny. Estudante de Sistemas de Informação pela UNIVAS -
+                                    Universidade do Vale do Sapucaí. Sou desenvolvedor Front-End a alguns anos e já
+                                    possuo experiência na área, trabalhando com sites e aplicações mobile. Tenho um
+                                    grande forte pelo design em sistemas e aplicações. Gosto muito da área de UX e UI e
+                                    todos esses conceitos mais visuais. Ganho Conhecimento a cada novo projeto
+                                    desenvolvido.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-left">
+                            <ul style="font-size:13px; list-style: none; padding: 0px" class="text-white">
+                                <li class="d-flex align-items-center text-center mx-2">
+                                    <i class="text-white my-1 px-3 py-2 fa fa-2x fa-user"></i>
+                                    <span id="year">
+                                        24 Years Old
+                                    </span>
+                                </li>
+                                <li class="d-flex align-items-center text-center mx-2">
+                                    <i class="text-white my-1 px-3 py-2 fa fa-2x fa-map-marker"></i>
+                                    Pouso Alegre, Minas Gerais - Brasil
+                                </li>
+                                <li class="d-flex align-items-center text-center mx-2">
+                                    <i class="text-white my-1 px-3 py-2 fa fa-2x fa-phone-square"></i>
+                                    +55 (35) 99209-6898
+                                </li>
+                                <li class="d-flex align-items-center text-center mx-2">
+                                    <i class="text-white my-1 px-3 py-2 fa fa-2x fa-at"></i>
+                                    misaelkelviny@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-12 text-center mx-auto">
+                            <div>
+                                <a href="CV - MISAEL.pdf" download="CV - MISAEL.pdf">
+                                    <button class="btnPortfolio" type="button">
+                                        <i class="fa fa-download mx-2"></i>
+                                        Download CV
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pt-2 d-flex align-items-center justify-content-center">
+                    <div class="border border-success py-3">
+                        <img class="img-fluid d-block mx-auto profilePhotoAboutMe py-3" src="img/2.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-    <div class="main">
-        <div>
+    <section id="projects">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-12 py-1 mt-2 border-bottom">
-                    <h2 class="light-blue">Projects</h2>
-                    <h4 class="text-muted">Completed</h4>
+                <div class="col-sm-12">
+                    <h2 class="projectTitle my-5">meus Projetos</h2>
+                    <p class="text-white" id="projectSubTitle">Alguns projetos que trabalhei recentemente</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 px-0">
-                    <a target="_blank" href="https://github.com/MisaelKelviny/Task7Manager">
-                        <div class="galeria-box">
-                            <img class="img-galeria" src="img/logo.png">
-                            <div class="legenda">
-                                <span class="text-center">Task7 Manager</span>
-                                <p style="font-size:12px;" class="px-2 text-center texto-legenda">TaskApp with tools to
-                                    control external technical service. Develop with Ionic 3</p>
-                                <p style="font-size:16px;" class="mt-5 text-center texto-legenda">See More<i
-                                        class="mx-2 align-middle fas fa-search"></i></p>
-
-                            </div>
+                <div class="col-xl-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item bg1">
+                            <a href="https://deliton.github.io/SIwebsite/" target="_blank">
+                                <div class="cardPortfolio">
+                                    <div class="cardPotfolioHeader">
+                                        <h5>Sistemas de Informação</h5>
+                                    </div>
+                                    <div class="iconCardPortfolio">
+                                        <img src="/img/iconesi.png" class="img-fluid" width="20px" height="20px">
+                                    </div>
+                                    <div class="cardPortfolioContent">
+                                        <p>Site desenvolvido para o curso de sistemas de informação da Universidade do
+                                            Vale do Sapucaí</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 px-0">
-                    <a target="_blank" href="https://github.com/MisaelKelviny/CuriousApp">
-                        <div class="galeria-box">
-                            <img class="img-galeria" src="img/curious.png">
-                            <div class="legenda">
-                                <span class="text-center">CuriosApp</span>
-                                <p style="font-size:12px;" class="px-2 text-center texto-legenda">App of randoms
-                                    curiosity</p>
-                                <p style="font-size:16px;" class="mt-5 text-center texto-legenda">See More<i
-                                        class="mx-2 align-middle fas fa-search"></i></p>
-                            </div>
+                        <div class="item">
+                            <a href="https://play.google.com/store/apps/details?id=br.com.track7.app&hl=pt_BR"
+                                target="_blank">
+                                <div class="cardPortfolio">
+                                    <div class="cardPotfolioHeader">
+                                        <h5>Track7 - My Score</h5>
+                                    </div>
+                                    <div class="iconCardPortfolio">
+                                        <img src="/img/trk7.png" class="img-fluid" width="20px" height="20px">
+                                    </div>
+                                    <div class="cardPortfolioContent">
+                                        <p>Aplicativo para competição saudável entre motoristas de garagens de ônibus.
+                                            Criado com IONIC Angular.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 px-0">
-                    <a target="_blank" href="https://github.com/MisaelKelviny/Trabalho_SI4_HelpDesk">
-                        <div class="galeria-box">
-                            <img class="img-galeria" src="img/bgitem.jpg">
-                            <div class="legenda">
-                                <span class="text-center">SI- Help Desk</span>
-                                <p style="font-size:12px;" class="px-2 text-center texto-legenda">Desktop - HelpDesk:
-                                    build with JAVA and PostgreSQL</p>
-                                <p style="font-size:16px;" class="mt-5 text-center texto-legenda">See More<i
-                                        class="mx-2 align-middle fas fa-search"></i></p>
-                            </div>
+                        <div class="item">
+                            <a href="https://doktorpwa.firebaseapp.com/" target="_blank">
+                                <div class="cardPortfolio">
+                                    <div class="cardPotfolioHeader">
+                                        <h5>Doktor Beer App</h5>
+                                    </div>
+                                    <div class="iconCardPortfolio">
+                                        <img src="/img/dktrbrau1.png" class="img-fluid" width="20px" height="20px">
+                                    </div>
+                                    <div class="cardPortfolioContent">
+                                        <p>Aplicativo PWA criado para o curso de publicidade e propaganda da UNIVAS, um
+                                            APP informativo
+                                            sobre uma empresa de cerveja.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 px-0">
-                    <a target="_blank" href="http://track7.com.br/">
-                        <div class="galeria-box">
-                            <img class="img-galeria" src="img/trackseven.png">
-                            <div class="legenda">
-                                <span class="text-center">Track7 - Website</span>
-                                <p style="font-size:12px;" class="px-2 text-center texto-legenda">Project to track7
-                                    website - Build and Managed with Wordpress</p>
-                                <p style="font-size:16px;" class="mt-5 text-center texto-legenda">See More<i
-                                        class="mx-2 align-middle fas fa-search"></i></p>
-                            </div>
+                        <div class="item">
+                            <a href="https://cartilhasifilis.firebaseapp.com/home" target="_blank">
+                                <div class="cardPortfolio">
+                                    <div class="cardPotfolioHeader">
+                                        <h5>Cartilha Enfermagem</h5>
+                                    </div>
+                                    <div class="iconCardPortfolio">
+                                        <img src="/img/enfermagem.png" class="img-fluid" width="20px" height="20px">
+                                    </div>
+                                    <div class="cardPortfolioContent">
+                                        <p>Aplicativo PWA de informações referente a sífilis congênita, projeto criado
+                                            junto
+                                            ao curso de enfermagem.</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
-            <div class="row mt-5 pt-2">
-                <div class="col-12">
-                    <h4 class="text-muted">In Progress...</h4>
+    </section>
+
+    <section id="podcast" class="py-5">
+        <div class="container">
+            <div class="row vc_row my-4 py-3">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="aboutMeTitle my-3 myPodcastTitle" id="aboutMe">meu PodCast</h2>
+                            <div>
+                                <p class="text-white text-justify" id="podcastProjectSubTitle">
+                                    Esse é o Nave Sem Controle podcast o podcast onde falamos diversos assuntos
+                                    sem o mínimo de comprometimento, discutimos de tudo um pouco. Projeto realizado
+                                    entre amigos o que torna tudo mais engraçado e espontâneo.
+                                </p>
+                            </div>
+                            <div class="row pt-5">
+                                <div class="d-flex flex-wrap justify-content-flex-center">
+                                    <div class="thumb mx-1 my-2">
+                                        <img src="/img/podcast1.jfif" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="thumb mx-1 my-2">
+                                        <img src="/img/podcast2.jfif" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="thumb mx-1 my-2">
+                                        <img src="/img/podcast3.jfif" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="thumb mx-1 my-2">
+                                        <img src="/img/podcast4.jfif" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="thumb mx-1 my-2">
+                                        <img src="/img/podcast5.jfif" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="thumb mx-1 my-2">
+                                        <img src="/img/podcast6.jfif" class="img-fluid rounded-circle">
+                                    </div>
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pt-2 d-flex align-items-center justify-content-center">
+                    <div class="">
+                        <div id="rssFeedImage"></div>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 px-0">
-                    <a target="_blank" href="https://misaelkelviny.github.io/SI-WebSite/">
-                        <div class="galeria-box">
-                            <img class="img-galeria" src="img/univas.jpg">
-                            <div class="legenda">
-                                <span class="text-center">Univas - Sistemas de Informação</span>
-                                <p style="font-size:12px;" class="px-2 text-center texto-legenda">Webpage Developed
-                                    for the course of System Information from University of Sapucaí valley (UNIVAS)</p>
-                                <p style="font-size:16px;" class="mt-5 text-center texto-legenda">See More<i
-                                        class="mx-2 align-middle fas fa-search"></i></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 px-0">
-                    <a target="_blank" href="">
-                        <div class="galeria-box">
-                            <img class="img-galeria" src="img/plano.jpg">
-                            <div class="legenda">
-                                <span class="text-center"> Plano - Contabilidade</span>
-                                <p style="font-size:12px;" class="px-2 text-center texto-legenda"></p>
-                                <p style="font-size:16px;" class="mt-5 text-center texto-legenda">See More<i
-                                        class="mx-2 align-middle fas fa-search"></i></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 px-0">
-                    <a target="_blank" href="https://github.com/MisaelKelviny/myPortfolio">
-                        <div class="galeria-box">
-                            <img class="img-galeria" src="img/bgitem.jpg">
-                            <div class="legenda">
-                                <span class="text-center">This Portfolio</span>
-                                <p style="font-size:12px;" class="px-2 text-center texto-legenda">My portfolio was
-                                    developed by myself</p>
-                                <p style="font-size:16px;" class="mt-5 text-center texto-legenda">See More<i
-                                        class="mx-2 align-middle fas fa-search"></i></p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="col-xl-12">
+                    <h2 class="my-5 text-center text-uppercase text-white font-weight-bold" id="episodios">Episódios
+                    </h2>
+                    <div id="rssFeedContainer" class="owl-carousel owl-theme"></div>
                 </div>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-sm-12 ">
-                <div>
-                    <h2 class="light-blue">Skills</h2>
+    </section>
+
+
+    <section id="skill" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h2 class="abilities my-5">Habilidades</h2>
                 </div>
-                <h3>Some of my skills, To build App, Software, Web and Design UI</h3>
-                <div class="row justify-content-center align-item-center mx-auto">
-                    <div class="col-sm-2">
-                        <div class="skill-box mx-auto">
-                            <img src="img/ionic.png">
+            </div>
+            <div class="row">
+                <div class="col-sm-3 text-center mb-3">
+                    <h3 class="text-white">Web</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">Html5 e Css3</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <div class="skill-box  mx-auto">
-                            <img src="img/git.svg">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">Angular</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <div class="skill-box mx-auto">
-                            <img src="img/mongodb.png">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">JavaScript</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2 mx-auto">
-                        <div class="skill-box mx-auto">
-                            <img src="img/html5.png">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">bootstrap</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2 mx-auto">
-                        <div class="skill-box mx-auto">
-                            <img src="img/css3.png">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">React.JS</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2 mx-auto">
-                        <div class="skill-box mx-auto">
-                            <img src="img/javaScript.png">
+                </div>
+                <div class="col-sm-3 text-center mb-3">
+                    <h3 class="text-white">Mobile</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">Ionic Angular</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:55%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2 ">
-                        <div class="skill-box mx-auto">
-                            <img src="img/bootstrap.png">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">React Native</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <div class="skill-box  mx-auto">
-                            <img src="img/postgree.png">
+                </div>
+                <div class="col-sm-3 text-center mb-3">
+                    <h3 class="text-white">DataBase</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">MySQL</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2 ">
-                        <div class="skill-box mx-auto">
-                            <img src="img/mysql.png">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">MongoDB</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2 ">
-                        <div class="skill-box mx-auto">
-                            <img src="img/xd.png">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">Firebase</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-2 ">
-                        <div class="skill-box mx-auto">
-                            <img src="img/photoshop.png">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">PostgreeSQL</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center mb-3">
+                    <h3 class="text-white">Desktop</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">JAVA</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">C#</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <p class="text-white">Python</p>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-
-        <div class="row py-5 my-5 ">
-            <div class="col-md-12">
-                <div class="text-center">
-                    <h3>Download My CV</h3>
-                    <p style="font-size:15px;">See More About Me</p>
-                </div>
-                <div class="text-center">
-                    <form method="get" action="MisaelKelvinyCV.pdf">
-                        <button class="btn btn-primary mb-5"><i class="fas mr-2 fa-download"></i>Download</button>
-                    </form>
+            <div class="row">
+                <div class="col-xl-12">
+                    <h2 class="my-5 text-center text-uppercase text-white font-weight-bold" id="graduation">Formação
+                    </h2>
                 </div>
             </div>
-        </div>
-
-        <div class="row my-5">
-            <div class="col-lg-12">
-                <h2 class="light-blue">Contact Me</h2>
-                <div class="row justify-content-center mx-auto">
-                    <div class="col-md-12">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-md-5">
-                                    <label for="name">Your Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Name">
-                                </div>
-                                <div class="form-group col-md-5">
-                                    <label for="lastName">Your Last Name</label>
-                                    <input type="text" class="form-control" id="lastName" placeholder="Lastname">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-5">
-                                    <label for="email">Email</label>
-                                    <input type="Email" class="form-control" id="email" placeholder="email">
-                                </div>
-                                <div class="form-group col-md-5">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="text" class="form-control" id="phone" placeholder="+99 (99) 9999-9999">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-10">
-                                    <label for="message">Your Message</label>
-                                    <input class="form-control my-2" id="title" type="text" placeholder="Title">
-                                    <textarea rows="4" placeholder="Message"></textarea>
-                                </div>
-                            </div>
-
-                            <button type="submit" class="btn btn-portfolio">Send</button>
-                        </form>
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <div class="border border-success px-3">
+                        <div class="shadow bgSubDark my-3 py-3 px-3 text-white">
+                            <h6 class="font-weight-bold">UNIVAS - Universidade do Vale do Sapucaí</h6>
+                            <p>Bacharelado em Sistemas de Informação</p>
+                            <span class="font-italic">2017 - 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-8 offset-md-3">
+                    <div class="border border-success px-3">
+                        <div class="shadow bgSubDark my-3 py-3 px-3 text-white">
+                            <h6 class="font-weight-bold">Origamid</h6>
+                            <p>Webdesigner Básico</p>
+                            <span class="font-italic">2015 - 2015</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <div class="border border-success px-3">
+                        <div class="shadow bgSubDark my-3 py-3 px-3 text-white">
+                            <h6 class="font-weight-bold">Udemy</h6>
+                            <p>UI Concepts and Fundamentals</p>
+                            <span class="font-italic">2019 - 2019</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h2 class="myContact my-5">meu contato</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-deck justify-content-center mx-auto mb-4">
+                    <div class="card border border-success shadow-sm p-3 mb-5 rounded "
+                        style="background-color: transparent">
+                        <div class="card-body text-center">
+                            <i class="fa fa-2x fa-phone py-4 greenColor"></i>
+                            <p class="card-text text-white">(35) 99209-6898</p>
+                        </div>
+                    </div>
+                    <div class="card border border-success shadow-sm p-3 mb-5 rounded "
+                        style="background-color: transparent">
+                        <div class="card-body text-center">
+                            <i class="fa fa-2x fa-at py-4 greenColor"></i>
+                            <p class="card-text text-white">misaelkelviny@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="card border border-success shadow-sm p-3 mb-5 rounded"
+                        style="background-color: transparent">
+                        <div class="card-body text-center">
+                            <i class="fa fa-2x fa-map py-4 greenColor"></i>
+                            <p class="card-text text-white">Pouso Alegre - MG, Brazil
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+    <div id="google_translate_element"></div>
 </body>
-
-</html
